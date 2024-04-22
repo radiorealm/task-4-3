@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
+        x:Class="task_4_3.MainWindow"
+        Title="task_4_3">
+	<Grid ShowGridLines="True"
+		  RowDefinitions="auto, *">
+		<DockPanel 	Grid.Row="0"
+					Background="LightBlue"
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Top">
+			<StackPanel Orientation="Horizontal"
+						Background="DarkSeaGreen"
+						HorizontalAlignment="Left">
+				<TextBlock Margin="5 15">Home</TextBlock>
+				<TextBlock Margin="5 15">About</TextBlock>
+				<TextBlock Margin="5 15">Blog's main topic 1</TextBlock>
+				<TextBlock Margin="5 15">Blog's main topic 2</TextBlock>
+				<TextBlock Margin="5 15">Blog's main topic 3</TextBlock>
+				<TextBlock Margin="5 15">Associated blogs</TextBlock>
+			</StackPanel>
+
+			<StackPanel Background="PowderBlue"
+						HorizontalAlignment="Right">
+				<TextBlock Margin="0 15 0 5">RSS</TextBlock>
+			</StackPanel>
+		</DockPanel>
+
+		<Grid Grid.Row="1"
+			  ShowGridLines="True"
+			  RowDefinitions="auto, *"
+			  ColumnDefinitions="auto, *"
+			  Background="AliceBlue">
+			<DockPanel Grid.Column="0"
+					   Grid.Row="0"
+					   Background="Silver"
+					   Margin="10">
+				<TextBox Width="650"
+						   Height="500"
+						   TextAlignment="Center">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet pellentesque risus ac vulputate. Maecenas at est in odio tincidunt rutrum. In ac placerat neque. Quisque finibus quam sem, sit amet malesuada nisi interdum at. Nunc quis varius justo, ut sodales tortor. Nulla a fringilla lorem, ut ornare augue. Suspendisse lobortis, lectus a laoreet iaculis, lectus dui condimentum felis, in congue ante diam id mi. Nam eros tellus, convallis et congue vel, blandit eleifend erat. Duis vitae elementum odio. Nullam ac semper eros.</TextBox>
+				
+			</DockPanel>
+
+		</Grid>
+	</Grid>
+</Window>
